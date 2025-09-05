@@ -16,12 +16,13 @@ export function LightDarkToggle({ className }: Props) {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger
+          asChild
           className={className}
           onClick={() => {
             setTheme(resolvedTheme === "dark" ? "light" : "dark");
           }}
         >
-          <Button>
+          <Button variant="outline">
             <MoonIcon className="block dark:hidden" />
             <SunIcon className="hidden dark:block" />
           </Button>
