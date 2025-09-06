@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { PasswordInput } from "@/components/ui/password-input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import {
   Select,
@@ -249,9 +250,8 @@ export default function SignupPage() {
                   <FormItem>
                     <FormLabel>Password</FormLabel>
                     <FormControl>
-                      <Input
-                        placeholder="********"
-                        type="password"
+                      <PasswordInput
+                        placeholder="••••••••"
                         {...field}
                       />
                     </FormControl>
@@ -267,9 +267,8 @@ export default function SignupPage() {
                   <FormItem>
                     <FormLabel>Comfirm password</FormLabel>
                     <FormControl>
-                      <Input
-                        placeholder="*******"
-                        type="password"
+                      <PasswordInput
+                        placeholder="••••••••"
                         {...field}
                       />
                     </FormControl>
