@@ -2,12 +2,12 @@ import { PersonStandingIcon } from "lucide-react";
 
 export default function MenuTitle() {
   return (
-    <h4 className="flex items-center">
+    <h5 className="flex items-center">
       <PersonStandingIcon
-        size={40}
+        size={30}
         className="text-primary"
       />
-      Dashboard
-    </h4>
+      My Dashboard
+    </h5>
   );
 }
