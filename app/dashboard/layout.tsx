@@ -15,7 +15,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       {!isDesktop && (
         <div className="p-4 flex justify-between md:hidden sticky top-0 left-0 bg-background border-b border-border">
           <MenuTitle />
-          <Drawer>
+          <Drawer direction="right">
             <DrawerTrigger>
               <MenuIcon />
             </DrawerTrigger>
