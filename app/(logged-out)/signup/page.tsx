@@ -114,7 +114,7 @@ export default function SignupPage() {
 
   return (
     <>
-      <PersonStandingIcon size={50} />
+      <PersonStandingIcon size={50} className="text-primary" />
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle>Sign up</CardTitle>
