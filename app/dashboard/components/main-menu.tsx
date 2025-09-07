@@ -7,7 +7,7 @@ import MenuTitle from "./menu-title";
 
 export default function MainMenu({ className }: { className?: string }) {
   return (
-    <nav className={cn("bg-muted overflow-auto p-4 flex flex-col", className)}>
+    <nav className={cn(`bg-muted overflow-auto p-4 flex flex-col`, className)}>
       <header className="border-b dark:border-b-black border-b-zinc-300 pb-4">
         <MenuTitle />
       </header>
@@ -22,7 +22,7 @@ export default function MainMenu({ className }: { className?: string }) {
       <footer className="flex gap-2 items-center">
         <Avatar>
           {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
-          <AvatarFallback className="bg-zinc-300 dark:bg-zinc-950">CN</AvatarFallback>
+          <AvatarFallback className="text-white bg-primary">CN</AvatarFallback>
         </Avatar>
         <Link
           href="/"

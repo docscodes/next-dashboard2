@@ -1,6 +1,6 @@
 "use client";
 
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { MenuIcon } from "lucide-react";
 import MainMenu from "./components/main-menu";
@@ -20,6 +20,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               <MenuIcon />
             </DrawerTrigger>
             <DrawerContent>
+              <DrawerTitle>
+              </DrawerTitle>
               <MainMenu />
             </DrawerContent>
           </Drawer>
