@@ -8,6 +8,7 @@ import tf from "@/public/images/tf.jpg";
 import { ListChecksIcon, PieChartIcon, StarIcon, UsersIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import SupportTicketsResolved from "./support-tickets-resolved";
 import TeamDistributionChart from "./team-distribution-chart";
 
 const teamLeaders = [
@@ -127,7 +128,9 @@ export default function TeamsStats() {
             <span>Support tickets resolved</span>
           </CardTitle>
         </CardHeader>
-        <CardContent className="pl-0"></CardContent>
+        <CardContent className="pl-0">
+          <SupportTicketsResolved />
+        </CardContent>
       </Card>
     </>
   );
