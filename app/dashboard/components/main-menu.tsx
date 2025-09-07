@@ -6,19 +6,19 @@ import MenuTitle from "./menu-title";
 
 export default function MainMenu() {
   return (
-    <div className="bg-muted overflow-auto p-4 flex flex-col">
-      <div className="border-b dark:border-b-black border-b-zinc-300 pb-4">
+    <nav className="bg-muted overflow-auto p-4 flex flex-col">
+      <header className="border-b dark:border-b-black border-b-zinc-300 pb-4">
         <MenuTitle />
-      </div>
-      <div className="py-4 grow">
+      </header>
+      <ul className="py-4 grow">
         <MenuItem href="/dashboard">Home</MenuItem>
         <MenuItem href="/dashboard/teams">Teams</MenuItem>
         <MenuItem href="/dashboard/employees">Employees</MenuItem>
         <MenuItem href="/dashboard/account">Account</MenuItem>
         <MenuItem href="/dashboard/settings">Settings</MenuItem>
-      </div>
+      </ul>
 
-      <div className="flex gap-2 items-center">
+      <footer className="flex gap-2 items-center">
         <Avatar>
           {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
           <AvatarFallback className="bg-zinc-300 dark:bg-zinc-950">CN</AvatarFallback>
@@ -30,7 +30,7 @@ export default function MainMenu() {
           Logout
         </Link>
         <LightDarkToggle className="ml-auto" />
-      </div>
-    </div>
+      </footer>
+    </nav>
   );
 }
