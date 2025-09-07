@@ -5,9 +5,10 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import cm from "@/public/images/cm.jpg";
 import rl from "@/public/images/rl.jpg";
 import tf from "@/public/images/tf.jpg";
-import { ListChecksIcon, StarIcon, UsersIcon } from "lucide-react";
+import { ListChecksIcon, PieChartIcon, StarIcon, UsersIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import TeamDistributionChart from "./team-distribution-chart";
 
 const teamLeaders = [
   {
@@ -111,9 +112,12 @@ export default function TeamsStats() {
           <CardHeader className="pb-2">
             <CardTitle className="text-base flex justify-between items-center">
               <span>Team distribution</span>
+              <PieChartIcon />
             </CardTitle>
           </CardHeader>
-          <CardContent className="pb-0"></CardContent>
+          <CardContent className="pb-0">
+            <TeamDistributionChart />
+          </CardContent>
         </Card>
       </div>
       <Card className="my-4">
