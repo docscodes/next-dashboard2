@@ -1,8 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { setTimeout } from "timers/promises";
+import { DataTable } from "@/components/ui/data-table";
+import { columns, Employee } from "./columns";
 
 export default async function EmployeesPage() {
-  await setTimeout(5000);
+  // await setTimeout(2000);
 
   const employees: Employee[] = [
     {
@@ -78,7 +79,12 @@ export default async function EmployeesPage() {
       <CardHeader>
         <CardTitle>Employees</CardTitle>
       </CardHeader>
-      <CardContent>Table</CardContent>
+      <CardContent>
+        <DataTable
+          columns={columns}
+          data={employees}
+        />
+      </CardContent>
     </Card>
   );
 }
